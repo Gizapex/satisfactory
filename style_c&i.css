@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-size: cover;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Rajdhani","helvetica","arial","sans-serif";
+    cursor: url("Image/arrow.cur"), auto !important;
+}
+#Background_Video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    color: #F2C800;
+    text-align: center;
+    transition: 0.5s;
+}
+h2:hover{
+    -webkit-filter: drop-shadow(0px 0px 29px #F2C800);
+    filter: drop-shadow(0px 0px 15px #F2C800);
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid white;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+.inputbox input{
+    cursor: url("Image/beam.cur"), text;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: white;
+}
+.inputbox i{
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size: 1.2em;
+    top: 20px;
+}
+.checkBox{
+    cursor: url("Image/link.cur"), pointer;
+}
+.forget{
+    margin: -15px 0 15px;
+    font-size: 0.9em;
+    font-weight: 1px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.forget label input{
+    cursor: url("Image/link.cur"), pointer;
+    margin-right: 3px;
+}
+.forget label a{
+    cursor: url("Image/link.cur"), pointer;
+    color: white;
+    text-decoration: none;
+    margin-left: 45px;
+    font-weight: 500;
+}
+.forget label a:hover{
+    text-decoration: underline;
+    text-decoration-color: #F2C800;
+}
+.login{
+    cursor: url("Image/link.cur"), pointer;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    appearance: none;
+    margin-left: 75px;
+    transition: 0.5s ease-out;
+}
+.login:hover{
+    -webkit-filter: drop-shadow(0px 0px 29px #FF6E6E);
+    filter: drop-shadow(0px 0px 15px #FF6E6E);
+}
+img{
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+}
+.register{
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    cursor: url("Image/link.cur"), pointer;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.register p a:hover{
+    text-decoration: underline;
+    text-decoration-color: #F2C800;
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Page d'inscription | Satisfactory</title>
+        <link rel="stylesheet" href="style_c&i.css">
+    </head>
+    <body>
+        <section>
+            <video autoplay muted loop id="Background_Video">
+                <source src="Video/Background_c&i.mp4" type="video/mp4">
+            </video>
+            <div class="form-box">
+                <div class="form-value">
+                    <form action="accueil.html" method="get" onsubmit="return ChangeImage();">
+                        <h2>S'inscrire</h2>
+                        <div class="inputbox">
+                            <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                            <input type="email" name="email" required>
+                            <label for="">Email</label>
+                        </div>
+                        <div class="inputbox">
+                            <i class="fa-solid fa-lock" style="color: #ffffff;"></i>
+                            <input type="password" name="password" required>
+                            <label for="">Mot de passe</label>
+                        </div>
+                        <div class="forget">
+                            <label class="checkBox" for=""><input type="checkbox">Se souvenir de moi <a href="#">Mot de passe oublié ?</a></label>
+                        </div>
+                        <button class="login" type="submit">
+                            <img src="Image/Launch_stage1.png" class="responsive" id="image" alt="Stage1"/>
+                        </button>
+                        <div class="register">
+                            <p>J'ai déjà un compte : <a href="./connexion.html">Se connecter</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Activation/Désactivation Bouton changement -->
+        <script src="c&i_button.js"></script>
+        <!-- Importation logo mail et mdp -->
+        <script src="https://kit.fontawesome.com/ff0736d244.js" crossorigin="anonymous"></script>
+    </body>
+</html>
