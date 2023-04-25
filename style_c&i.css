@@ -12,6 +12,7 @@ html, body{
     list-style: none;
     font-family: "Rajdhani","helvetica","arial","sans-serif";
     cursor: url("Image/arrow.cur"), auto !important;
+    background-color: #202125;
 }
 #Background_Video{
     position: fixed;
