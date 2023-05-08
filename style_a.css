@@ -275,7 +275,7 @@ path{
     padding-left: 100px;
 }
 .block6{
-    height: 76vh;
+    height: 100%;
     background-color: #202125;
     box-sizing: border-box;
     position: relative;
@@ -305,9 +305,8 @@ path{
     padding: 15.5vh 27.5px 15vh 27.5px;
 }
 .block7{
-    height: 100vh;
+    height: 100%;
     box-sizing: border-box;
-    background-color: blue;
     position: relative;
 }
 .block7 h3{
@@ -318,11 +317,10 @@ path{
     color: #3B3C41;
     text-transform: uppercase;
     font-size: 30px;
-  }
-  
+}
 .block7 h3:before{
     content:"";
-    height: 2px;
+    height: 1px;
     width: 350px;
     background: #3B3C41;
     display: block;
@@ -330,7 +328,6 @@ path{
     top: 50%;
     left: -220px;
 }
-  
 .block7 h3:after{
     content:"";
     height: 1px;
@@ -343,17 +340,20 @@ path{
 }
 .updates{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 .updates img{
-    max-width: 100%;
-    height: auto;
-    margin-right: 10px;
-    display: block;
+    width: 30%;
+    position: relative;
+    filter: grayscale(1);
+    transition: 0.5s ease-in-out;
 }
-.block8{
+.updates img:hover{
+    filter: grayscale(0);
+    transition: 0.5s ease-in-out;
+}
+.gallery{
     top: calc(100% + 20px);
     display: flex;
     justify-content: center;
@@ -362,20 +362,19 @@ path{
     overflow: hidden;
     transform: skew(5deg);
     box-sizing: border-box;
-    background-color: red;
 }
-.title2{
+.block8 h3{
+    position: relative;
     max-width: 500px;
     margin: 100px auto;
     text-align: center;
     color: #3B3C41;
     text-transform: uppercase;
     font-size: 30px;
-    background-color: yellowgreen;
 }
-.title2:before{
+.block8 h3:before{
     content:"";
-    height: 2px;
+    height: 1px;
     width: 350px;
     background: #3B3C41;
     display: block;
@@ -383,7 +382,7 @@ path{
     top: 50%;
     left: -220px;
 }
-.title2:after{
+.block8 h3:after{
     content:"";
     height: 1px;
     width: 350px;
@@ -400,7 +399,6 @@ path{
     position: relative;
 }
 .card__head{
-    color: black;
     background: #F2C800;
     padding: 0.5em;
     transform: rotate(-90deg);
@@ -437,15 +435,6 @@ path{
 }
 .media_mages:not(:nth-child(5)){
     margin-right: 1em;
-}
-
-@media screen and (max-width: 1625px) {
-    .updates{
-        flex-direction: column;
-    }
-    .updates img{
-        margin-bottom: 10px;
-    }
 }
 
 @media screen and (max-width: 1225px) {
@@ -540,12 +529,12 @@ path{
         right: -120px;
         height: 1px;
     }
-    .title2:before{
+    .block8 h3:before{
         width: 250px;
         left: -120px;
         height: 1px;
     }
-    .title2:after{
+    .block8 h3:after{
         width: 250px;
         right: -120px;
         height: 1px;
@@ -572,12 +561,12 @@ path{
         right: -20px;
         height: 1px;
     }
-    .title2:before{
+    .block8 h3:before{
         width: 150px;
         left: -20px;
         height: 1px;
     }
-    .title2:after{
+    .block8 h3:after{
         width: 150px;
         right: -20px;
         height: 1px;
@@ -610,12 +599,12 @@ path{
         right: 65px;
         height: 1px;
     }
-    .title2:before{
+    .block8 h3:before{
         width: 75px;
         left: 65px;
         height: 1px;
     }
-    .title2:after{
+    .block8 h3:after{
         width: 75px;
         right: 65px;
         height: 1px;
