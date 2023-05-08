@@ -468,8 +468,11 @@ path{
     color: #A1A9AF;
     font-weight: 500;
 }
+.block9 .social-buttons{
+    display: flex;
+}
 .block9 .social-buttons i{
-    margin-top: 10px;
+    margin: 10px 5px 0px 5px;
     font-size: 3em;
     color: white;
     transition: 0.5s ease;
