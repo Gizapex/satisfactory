@@ -1,5 +1,5 @@
-# https://gizapex.github.io/satisfactory/
+# https://gizapex.github.io/satisfactory/ 🛠️
 
-Projet d'entraînement.
+Projet d'entraînement (site web).
 
 Réplique du site de Satisfactory.
